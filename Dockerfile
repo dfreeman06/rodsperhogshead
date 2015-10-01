@@ -1,4 +1,13 @@
 FROM andrewosh/binder-base
 
-RUN /bin/bash -c "source activate python3 && pip install ipywidgets && pip install pint numtraits"
+USER main
 
+RUN source activate python3
+RUN conda install notebook
+RUN pip install ipywidgets
+RUN pip install pint numtraits
+
+RUN source activate binder
+RUN conda install notebook
+RUN pip install ipywidgets
+RUN pip install pint numtratis
