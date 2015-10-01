@@ -1,4 +1,8 @@
 numtraits
 ipywidgets
 pint
+traitlets
+notebook
+numpy
+
 
