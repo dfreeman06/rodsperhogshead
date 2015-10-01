@@ -1,4 +1,4 @@
 FROM andrewosh/binder-base
 
-RUN pip install ipywidgets && pip install pint numtraits
+RUN /bin/bash -c "pip install ipywidgets && pip install pint numtraits"
 
